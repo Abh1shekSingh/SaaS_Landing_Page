@@ -34,7 +34,7 @@ export default function Hero() {
             [rightPointerScope.current, { y:0, x:200},{duration:0.5}],
             [rightPointerScope.current, { x:0, y:[0,20,0] },{duration:0.5, ease: 'easeInOut'}],
         ])
-    },[]);
+    });
 
     return <section className="py-24 overflow-x-clip" style={{
             cursor: `url(${cursorYouImage.src}), auto`
@@ -64,7 +64,7 @@ export default function Hero() {
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">Impactful design, created
                 effortlessly</h1>
             <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">We help you create beautiful and
-                functional digital experiences. Our designs are not just visually appealing; they're also accessible,
+                functional digital experiences. Our designs are not just visually appealing; they&apos;re also accessible,
                 inclusive, and user-friendly.</p>
             <form className="flex border mx-auto border-white/15 rounded-full p-2 mt-8 md:max-w-lg">
                 <input className="bg-transparent px-4 md:flex-1 w-full" type='email' placeholder='Email' required />
